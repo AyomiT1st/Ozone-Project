@@ -8,12 +8,18 @@ Analysis: Computes trend summaries, seasonal patterns, and exceedance-context me
 Visualization: Generates clear time-series plots and summary graphics for reporting.
 Reproducible Outputs: Produces analysis-ready tables and figure outputs with documented assumptions.
 
+# Data Sources
+EPA AQS: MDA8 ozone (surface monitoring data)
+EPA Meteorology: station/site meteorological files used alongside ozone analyses
+MERRA-2 Reanalysis: planetary boundary layer height (PBLH) and supporting meteorological fields
+Satellite: OMI and TROPOMI products used for chemical-regime diagnostics
+Emissions: NEI (National Emissions Inventory) for emissions context and interpretation
+
 # Project Structure
-data/: Sample datasets (optional) or small example files for demos.
-notebooks/: Jupyter notebooks demonstrating QA/QC, analysis, and visualization.
-src/: Python modules for data retrieval, processing, analysis, and plotting.
-outputs/: Generated figures and tables (gitignored or versioned selectively).
-README.md: Project overview and usage.
+data/: Data files (CSV, TXT, NetCDF4) used in the notebooks.
+notebooks/: Jupyter notebooks demonstrating QA/QC, analysis, and visualization
+src/: Python modules for data retrieval, processing, analysis, and plotting
+outputs/: Generated figures and tables (gitignored or versioned selectively)
 
 # Tools and Libraries
 Python 3.10+
@@ -21,3 +27,4 @@ pandas, numpy, scipy
 xarray
 matplotlib, plotly 
 scikit-learn
+cartopy
